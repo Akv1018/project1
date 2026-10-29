@@ -1,0 +1,48 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 512 512" width="100%" height="100%">
+  <!-- Rounded Background Container -->
+  <rect x="0" y="0" width="512" height="512" rx="112" fill="#F05A22" />
+
+  <!-- Character / Wings / Food Group (White Outline / Base) -->
+  <g stroke="#FFFFFF" stroke-width="20" stroke-linecap="round" stroke-linejoin="round" fill="none">
+    
+    <!-- Speed Lines Behind -->
+    <path d="M 390 248 C 420 248, 430 258, 410 268 C 390 278, 380 268, 380 268" stroke="#FF9D1B" stroke-width="12" />
+    <path d="M 395 300 C 425 300, 435 310, 415 320 C 395 330, 385 320, 385 320" stroke="#FF9D1B" stroke-width="12" />
+
+    <!-- Wing Layers -->
+    <path d="M 285 200 C 340 180, 390 190, 420 220 C 380 225, 340 225, 310 235" fill="#E33E2B" />
+    <path d="M 295 230 C 345 220, 385 230, 410 255 C 375 258, 340 258, 315 268" fill="#F05A22" />
+    <path d="M 290 260 C 330 255, 365 265, 385 285 C 355 288, 325 288, 300 295" fill="#FF7A00" />
+
+    <!-- Left Arm & Hand Holding Bowl -->
+    <path d="M 210 265 C 190 280, 160 270, 155 255" fill="none" />
+
+    <!-- Bowl & Steam -->
+    <path d="M 120 240 Q 120 280 160 280 Q 200 280 200 240 Z" fill="#E33E2B" />
+    <path d="M 115 240 L 205 240" stroke-width="14" />
+    <!-- Food inside bowl -->
+    <path d="M 125 238 C 130 220, 150 215, 160 225 C 170 215, 190 220, 195 238 Z" fill="#FF9D1B" stroke="none" />
+    
+    <!-- Steam Curves -->
+    <path d="M 135 205 C 130 195, 140 185, 135 175" stroke="#FFFFFF" stroke-width="8" fill="none" />
+    <path d="M 160 195 C 153 180, 167 165, 160 150" stroke="#FFFFFF" stroke-width="10" fill="none" />
+    <path d="M 185 205 C 180 195, 190 185, 185 175" stroke="#FFFFFF" stroke-width="8" fill="none" />
+
+    <!-- Capsule Main Body -->
+    <path d="M 200 250 C 200 170, 270 170, 270 250 L 270 280 C 270 330, 200 330, 200 280 Z" fill="#FF7A00" />
+
+    <!-- Running Legs -->
+    <!-- Back Leg -->
+    <path d="M 255 315 L 285 345 L 315 330" fill="none" stroke-width="22" />
+    <!-- Front Leg -->
+    <path d="M 220 315 L 185 340 L 200 360" fill="none" stroke-width="22" />
+
+  </g>
+
+  <!-- Face Features (Eyes and Smile) -->
+  <g fill="#A62208">
+    <ellipse cx="225" cy="220" rx="5" ry="7" />
+    <ellipse cx="252" cy="220" rx="5" ry="7" />
+    <path d="M 230 232 Q 238 242 247 232" fill="none" stroke="#A62208" stroke-width="5" stroke-linecap="round" />
+  </g>
+</svg>
