@@ -85,23 +85,15 @@
   font-size: 14px;
   color: #555;
 }
-.search  {
-  display: flex;
-  align-items: flex-start;
-  margin-top: 20px;  
-  margin-left: 20px;
-}
-.search input {
-  margin-right: 7px;
-  padding: 5px;
-  border-radius: 20px;
-}
 
-.search button {
+
+.filter-btn {
   padding: 5px 10px;
   border-radius: 20px;
   border: none;
   cursor: pointer;
+  margin: 20px 0px 0px 20px;
+  font-weight: bold;
 }
 
 .body {
