@@ -1,6 +1,7 @@
 import RestaurantCard from './RestaurantCard';
 import {getRestaurantsList} from '../services/swiggyAPI';
 import { useState,useEffect} from 'react';
+import Shimmer from './Shimmer';
 
 
 
@@ -14,10 +15,12 @@ const Body = () => {
 
    const fetchRestaurants = async () => {
       const restaurants = await getRestaurantsList();
-      console.log(restaurants);
       setListofRestaurants(restaurants);
     };
  
+    if(ListofRestaurants.length === 0){
+      return <Shimmer/>;
+    }
 
   return(
   <div className="body">
