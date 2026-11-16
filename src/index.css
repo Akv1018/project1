@@ -10,7 +10,7 @@
   justify-content: space-between;
   align-items: center;
   padding: 10px 20px;
-  background-color: rgb(5, 5, 34);
+  background-color: #0a3323;
   box-shadow: 0 10px 20px rgb(248, 249, 239);
   position: relative;
 }
@@ -32,7 +32,7 @@
 }
 
 .res-card {
-  background-color: #f0f0f0;
+  background-color: #839958;
   border-radius: 5px;
   width: 180px;
   height: auto;
@@ -87,7 +87,7 @@
 .body {
   display: flex;
   flex-direction: column;
-  background-color: #333;
+  background-color: #D39683;
   
 }
 

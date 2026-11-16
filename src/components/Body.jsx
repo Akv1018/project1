@@ -11,6 +11,8 @@ const Body = () => {
 
   const [searchText, setSearchText] = useState("");
 
+  const[filteredRestaurants, setFilteredRestaurants] = useState([]);
+
   useEffect(() => { 
     fetchRestaurants();
   }, []);
@@ -18,6 +20,7 @@ const Body = () => {
    const fetchRestaurants = async () => {
       const restaurants = await getRestaurantsList();
       setListofRestaurants(restaurants);
+      setFilteredRestaurants(restaurants);
     };
  
     if (ListofRestaurants.length === 0) {
@@ -34,7 +37,7 @@ const Body = () => {
   
   
   <button className="filter-btn" onClick={() => {const res = ListofRestaurants.filter((res) => res.info.avgRating > 4.2);
-     setListofRestaurants(res);}}>
+     setFilteredRestaurants(res);}}>
     Top rated restaurants
   </button>
   <div className="search">
@@ -43,16 +46,15 @@ const Body = () => {
     </input>
 
     <button className="search-btn" onClick={() =>{
-      const filteredRestaurants= ListofRestaurants.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()));
-      setListofRestaurants(filteredRestaurants);
+      const searchedRestaurants= ListofRestaurants.filter((res)=>res.info.name.toLowerCase().includes(searchText.toLowerCase()));
+      setFilteredRestaurants(searchedRestaurants);
       }}>search
     </button>
       </div>
  </div>
- 
+
  <div className="restaurant-list">
- {
-  ListofRestaurants.map(resi => <RestaurantCard res={resi} key={resi.info.id}/>)
+ {filteredRestaurants.length === 0 ? (<h1>No restaurants found</h1>) :  filteredRestaurants.map(resi => <RestaurantCard res={resi} key={resi.info.id}/>)
  }
  </div>
  </div>
